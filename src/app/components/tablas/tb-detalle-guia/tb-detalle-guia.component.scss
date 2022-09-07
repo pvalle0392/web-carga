@@ -1,0 +1,28 @@
+table {
+    width: 100% !important;
+}
+// @import '/src/utils/colors.scss';
+tr{
+    height: 35px !important;
+    th{
+        background-color: gray;
+        color: white;
+        font-weight: 500;
+    }
+}
+::ng-deep th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding-left: 24px !important;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+::ng-deep .mat-icon-button.mat-button-disabled.mat-button-disabled, .mat-stroked-button.mat-primary.mat-button-disabled, .mat-stroked-button.mat-accent.mat-button-disabled, .mat-stroked-button.mat-warn.mat-button-disabled, .mat-stroked-button.mat-button-disabled.mat-button-disabled {
+    color:gray !important;
+}
+::ng-deep mat-paginator .mat-icon-button, .mat-stroked-button {
+    color: gray !important;
+    background: transparent;
+}
+::ng-deep .mat-paginator-page-size-label {
+    visibility: hidden;
+}

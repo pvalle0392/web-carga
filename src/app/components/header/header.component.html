@@ -1,0 +1,17 @@
+<div class="content-header">
+    <div>
+        <div [hidden]="!mostrar" class="camp1" (click)="cancelar()">
+            <mat-icon class="mat-18">arrow_back_ios_new</mat-icon>
+            <h5>Volver</h5>
+        </div>
+    </div>
+    <div class="camp2">
+        <h5 [hidden]="mostrar">{{nombre}}</h5>
+        <mat-icon class="mat-18" [hidden]="mostrar">account_circle</mat-icon>
+        
+        <div class="camp1" (click)="admin()">
+            <mat-icon class="mat-18">manage_accounts</mat-icon>
+            <h5>Admin</h5>
+        </div>
+    </div>
+</div>

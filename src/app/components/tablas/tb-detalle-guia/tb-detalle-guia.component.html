@@ -1,0 +1,48 @@
+
+    <table mat-table [dataSource]="dataSource_sub" style="width: 100%">
+      <ng-container matColumnDef="pallet">
+        <th mat-header-cell *matHeaderCellDef> Pallet </th>
+        <td mat-cell *matCellDef="let element"> {{element.pallet}} </td>
+      </ng-container>
+      <ng-container matColumnDef="modulo">
+        <th mat-header-cell *matHeaderCellDef> Módulo </th>
+        <td mat-cell *matCellDef="let element"> {{element.modulo}} </td>
+      </ng-container>
+      <ng-container matColumnDef="cantidad">
+        <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+        <td mat-cell *matCellDef="let element"> {{element.cantidad}} </td>
+      </ng-container>
+      <ng-container matColumnDef="material">
+        <th mat-header-cell *matHeaderCellDef> Material </th>
+        <td mat-cell *matCellDef="let element">BANDEJA</td>
+      </ng-container>
+      <ng-container matColumnDef="peso">
+        <th mat-header-cell *matHeaderCellDef>Peso </th>
+        <td mat-cell *matCellDef="let element"> {{element.peso}} </td>
+      </ng-container>
+      <ng-container matColumnDef="tratamiento">
+        <th mat-header-cell *matHeaderCellDef> Tratamiento </th>
+        <td mat-cell *matCellDef="let element"> {{element.tratamiento}} </td>
+      </ng-container>
+      <ng-container matColumnDef="variedad">
+        <th mat-header-cell *matHeaderCellDef> Variedad </th>
+        <td mat-cell *matCellDef="let element"> {{element.variedad}} </td>
+      </ng-container>
+      <ng-container matColumnDef="formato">
+        <th mat-header-cell *matHeaderCellDef> Formato </th>
+        <td mat-cell *matCellDef="let element"> {{element.formato}} </td>
+      </ng-container>
+      <ng-container matColumnDef="usuario">
+        <th mat-header-cell *matHeaderCellDef> Usuario </th>
+        <td mat-cell *matCellDef="let element"> {{element.usuario}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons 
+                   aria-label="Select page of periodic elements">
+    </mat-paginator> -->
+  <!-- </div> -->

@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="content-principal">
+    <mat-tab-group>
+        <mat-tab label=" Generar Guías">
+            <div class="content-tabla">
+                <app-tb-guias [dataSource]="dataSource"></app-tb-guias>
+            </div>
+        </mat-tab>
+        <mat-tab label="Guías Generadas">
+            <app-tb-guias [dataSource]="dataSource2"></app-tb-guias>
+            <!-- <app-tb-guias [dataSource]="dataSource2"></app-tb-guias> -->
+            <!-- <app-tb-guias-generadas [dataSource]="dataSource2"></app-tb-guias-generadas> -->
+        </mat-tab>
+      </mat-tab-group>
+</div>

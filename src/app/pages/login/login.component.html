@@ -1,0 +1,29 @@
+<div class="content-back">
+  <img src="assets/image/bg.jpg" alt="">
+  <div class="content-principal">
+      <div class="card-login">
+          <div class="titulo-principal">
+              <h2>Iniciar Sesión</h2>
+          </div>
+          <div class="campo">
+              <mat-form-field appearance="outline" class="input_size">
+                  <mat-label>Usuario :</mat-label>
+                  <input matInput class="text_size">
+                </mat-form-field>
+          </div>
+          <div class="campo">
+              <mat-form-field appearance="outline" class="input_size">
+                  <mat-label>Contraseña :</mat-label>
+                  <input matInput [type]="hide ? 'password' : 'text'" class="text_size">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon class="icon_size">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                </mat-form-field>
+          </div>
+          <button mat-button class="sesion" (click)="signIn()">
+                  <!-- <mat-icon class="mat-18">login</mat-icon> -->
+                  <span>Iniciar</span>
+          </button>
+      </div>
+  </div>
+</div>
