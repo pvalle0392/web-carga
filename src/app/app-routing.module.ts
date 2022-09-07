@@ -7,6 +7,8 @@ import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent,canActivate:[] },
+  { path: '**', component: LoginComponent,canActivate:[] },
+  { path: '', component: LoginComponent,canActivate:[] },
   { path: 'carga', component: ConforCargaComponent,canActivate:[] },
   { path: 'detalle-carga', component: DetalleCargaComponent,canActivate:[] },
   { path: 'detalle-carga/:placa', component: DetalleCargaComponent,canActivate:[] },
